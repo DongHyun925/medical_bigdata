@@ -1,0 +1,279 @@
+body{
+    margin: 0px;
+    background-color: #F3F3F3;
+
+}
+
+.container{
+    background-color: black;
+    padding: 0px;
+
+
+}
+
+.container h1{
+    font-family: "Gugi", sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    cursor: pointer;
+
+}
+
+
+.title-area{
+    background-color: orangered;
+    width: 100%;
+}
+
+.title-search-area{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+
+#category-button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: gray;
+}
+
+#category-button button:hover{
+    color: orangered;
+}
+
+nav button{
+    margin: 5px;
+    background: none;
+    border: none;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+
+#search-area{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#input-box{
+    width: 400px;
+    height: 40px;
+    margin-right: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-button{
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    background-color:rgb(228, 222, 222);
+    position: relative;
+    top: 5px;
+}
+
+
+.movie-poster{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.description{
+    color: lightgray;
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+    width: 990px;
+}
+
+
+.movie-info{
+    display: flex;
+}
+
+.movie-info div{
+    margin-right: 20px;
+}
+
+
+.page-link{
+    color: black;
+    border-radius: 50px;
+    margin: 5px;
+    margin-top: 15px;
+    background: none;
+    border: none;
+    color: lightgray;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.pagination{
+    --bs-pagination-active-bg: orangered;
+    --bs-pagination-active-border-color: orangered;
+    --bs-pagination-hover-color: orangered;
+    justify-content: center;
+    
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: 50px;(--bs-pagination-border-radius);
+    border-bottom-right-radius: 50px;(--bs-pagination-border-radius);
+}
+
+.page-item:first-child .page-link {
+    border-top-left-radius: 50px;(--bs-pagination-border-radius);
+    border-bottom-left-radius: 50px;(--bs-pagination-border-radius);
+}
+
+
+footer{
+    background-color: grey;
+}
+
+.footer-area{
+    color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+    padding-bottom: 20px;
+    padding-top:20px;
+    margin-bottom: 50px;
+}
+
+
+.footer-second-section li{
+    list-style: none;
+}
+
+.sns-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns-area div:first-child{
+    font-weight: 700;
+}
+
+.sns-icon{
+    display: flex;
+    margin: 10px;
+}
+
+.sns-icon div{
+    margin: 10px;
+    font-size: 2em;
+    
+} 
+
+.footer-first-section li{
+    list-style: none;
+}
+
+.footer-last-section{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-last-section div{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.footer-area2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+@media(max-width: 1000px){
+    .title-search-area{
+        height: 150px;
+    }
+
+    #search-area{
+        padding-top:5px;
+    }
+
+    #movie-detail{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media(max-width: 700px){
+    #movie-detail{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #input-box{
+        font-size: 12px;
+    }
+
+    .title-search-area{
+        height: 150px;
+    }
+
+    #search-area{
+        padding-top:5px;
+    }
+
+    .movie-info{
+        display: flex;
+        flex-direction: column;
+        margin-bottom:5px;
+    }
+
+    .footer-last-section{
+        display: none;
+    }
+
+    .footer-first-section{
+        display: none;
+    }
+
+    .footer-second-section{
+        display: none;
+    }
+
+    .footer-area{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sns-area div:first-child{
+        text-align: center;
+        font-weight: 700;
+    }
+
+}
